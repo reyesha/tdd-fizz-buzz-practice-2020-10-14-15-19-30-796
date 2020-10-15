@@ -27,12 +27,22 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_return_Fizz_when_count_off_given_order_number_5() {
+    void should_return_Buzz_when_count_off_given_order_number_5() {
         int orderNumber = 5;
         FizzBuzz fizzBuzz = new FizzBuzz();
 
         String actual = fizzBuzz.countOff(orderNumber);
 
         assertEquals("Buzz", actual);
+    }
+
+    @Test
+    void should_return_Whizz_when_count_off_given_order_number_7() {
+        int orderNumber = 7;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String actual = fizzBuzz.countOff(orderNumber);
+
+        assertEquals("Whizz", actual);
     }
 }
