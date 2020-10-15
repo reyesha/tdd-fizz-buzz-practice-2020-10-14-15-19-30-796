@@ -5,7 +5,10 @@ public class FizzBuzz {
 
         if (orderNumber % 3 == 0){
             return "Fizz";
+        }else if (orderNumber % 5 == 0) {
+            return "Buzz";
         }
+
         return String.valueOf(orderNumber);
     }
 }
